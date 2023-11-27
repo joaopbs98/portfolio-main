@@ -1,10 +1,18 @@
+"use client";
+
 import React from "react";
 import { Button } from "./ui/button";
-import Image from "next/image";
+import Lottie from "lottie-react";
+import animationData from "../public/lottie/hero.json";
 
 const Hero = () => {
   return (
-    <section className="flex self-center flex-col gap-10 md:gap-16 w-full xl:gap-20 cursor-default ">
+    <section className="flex self-center flex-col gap-10 md:gap-16 w-full xl:gap-20 cursor-default py-14">
+      <Lottie
+        animationData={animationData}
+        className="absolute top-[8rem] animate-fade-right animate-once animate-delay-100 md:top-[4rem]"
+        loop={true}
+      />
       <div className="text-white flex flex-col w-full justify-self-center gap-10 md:flex-row md:justify-between ">
         <h1 className=" text-7xl text-start leading-[1] md:text-9xl xl:text-[10rem] animate-fade-right animate-once animate-delay-100">
           Hi! <br />
@@ -29,7 +37,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex w-4/6 text-left text-white lg:w-2/6 animate-fade animate-once animate-delay-200">
-          <p className="text-[0.95rem] md:text-lg xl:text-xl">
+          <p className="text-[0.95rem] md:text-lg xl:text-xl leading-tight">
             In the Frontend realm, excelling with NextJS 14, bringing creativity
             to every digital venture.
           </p>

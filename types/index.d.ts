@@ -8,3 +8,8 @@ export interface Card {
   projectTitle: string;
   projectDescription: string;
 }
+
+export interface ExpertiseInfo {
+  title: string;
+  description: string;
+}

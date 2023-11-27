@@ -23,23 +23,48 @@ import { Card } from "@/types";
 
 export const Cards: Card[] = [
   {
-    imageUrl: "/assets/images/devflow.png",
+    imageUrl: "/devflow.jpg",
     projectTitle: "Devflow",
     projectDescription: "Project with Next.JS",
   },
   {
-    imageUrl: "/assets/images/binteriores.png",
-    projectTitle: "Binteriores",
+    imageUrl: "/binteriores.jpg",
+    projectTitle: "B-Interiores",
     projectDescription: "Project with React.JS",
   },
   {
-    imageUrl: "/assets/images/portfolio1.png",
+    imageUrl: "/portfolio1.jpg",
     projectTitle: "My Portfolio",
     projectDescription: "This is my recente project",
   },
   {
-    imageUrl: "/assets/images/progress.jpeg",
+    imageUrl: "/progress.png",
     projectTitle: "Work in Progress...",
     projectDescription: "Stay tune for new projects 🚀",
+  },
+];
+
+import { ExpertiseInfo } from "@/types";
+
+export const ExpertiseInfos: ExpertiseInfo[] = [
+  {
+    title: "• Frontend Development",
+    description:
+      "I create efficient, adaptable, and engaging websites. No predefined templates. I design from scratch. The combination of NextJS and Vercel forms the foundation of my web development appraoch. I employ it to provide a fast, secure, and scalable experience.",
+  },
+  {
+    title: "• Backend Development",
+    description:
+      "I create efficient, adaptable, and engaging websites. No predefined templates. I design from scratch. The combination of NextJS and Vercel forms the foundation of my web development appraoch. I employ it to provide a fast, secure, and scalable experience.",
+  },
+  {
+    title: "• UI/UX Design",
+    description:
+      "I create efficient, adaptable, and engaging websites. No predefined templates. I design from scratch. The combination of NextJS and Vercel forms the foundation of my web development appraoch. I employ it to provide a fast, secure, and scalable experience.",
+  },
+  {
+    title: "• Project Management",
+    description:
+      "I create efficient, adaptable, and engaging websites. No predefined templates. I design from scratch. The combination of NextJS and Vercel forms the foundation of my web development appraoch. I employ it to provide a fast, secure, and scalable experience.",
   },
 ];

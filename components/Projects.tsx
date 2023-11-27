@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Card from "./shared/Card";
 import { Cards } from "@/constants";
 import { Button } from "./ui/button";
+import { useIsVisible } from "../utils/useIsVisible";
 
 const Projects = () => {
   const [startIndex, setStartIndex] = useState(0);
@@ -22,10 +23,43 @@ const Projects = () => {
 
   const visibleCards = Cards.slice(startIndex, startIndex + cardsPerPage);
 
+  const ref1 = useRef();
+  const isVisible1 = useIsVisible(ref1);
+
+  const ref2 = useRef();
+  const isVisible2 = useIsVisible(ref2);
+
   return (
-    <section className="bg-black border-none w-[600px] pt-24">
-      <h3 className="text-5xl font-bold text-white pt-8 pb-10 ">Projects:</h3>
-      <div className="flex justify-between gap-14 items-center">
+    <section className="w-full flex-col gap-4">
+      <div
+        ref={ref1}
+        className={`mb-[3rem] flex-col transition-opacity ease-in duration-700 ${
+          isVisible1 ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <div className="w-full flex justify-between align-items-end">
+          <h2 className="text-4xl mb-[1rem] text-white font-bold md:text-5xl">
+            Projects
+          </h2>
+          <a
+            href="/projects"
+            className="text-white text-sm h-fit self-end pb-4 md:text-normal"
+          >
+            More →
+          </a>
+        </div>
+        <p className="text-white w-[99%] font-light leading-tight md:text-lg">
+          With experience in designing and developing user-friendly web designs
+          and digital solutions, I aim to assist your company in constructing
+          the ideal project.
+        </p>
+      </div>
+      <div
+        ref={ref2}
+        className={`flex-col justify-between gap-14 items-center transition-opacity ease-in duration-700 md:flex md:flex-row md:justify-center ${
+          isVisible2 ? "opacity-100" : "opacity-0"
+        } `}
+      >
         {visibleCards.map((item) => (
           <Card
             key={item.projectTitle}
@@ -35,7 +69,7 @@ const Projects = () => {
           />
         ))}
         <Button
-          className="animate-ping p-4 pb-6 w-14 h-14 mb-20 ml-6 rounded-full flex items-center bg-black justify-center cursor-pointer border border-white hover:border-none hover:animate-none"
+          className="hidden animate-ping p-4 pb-6 w-14 h-14 ml-6 rounded-full items-center bg-black justify-center cursor-pointer border border-white hover:border-none hover:animate-none lg:flex"
           onClick={handleNext}
         >
           <span className="text-extrabold text-[2rem]">→</span>
