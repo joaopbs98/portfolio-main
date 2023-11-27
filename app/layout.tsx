@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   title: "João Silva | Portfolio",
   description: "This is my portfolio, feel free to explore it!",
   icons: {
-    icon: "/assets/images/favicon.ico",
+    icon: "/assets/images/layout.jpg",
   },
 };
 

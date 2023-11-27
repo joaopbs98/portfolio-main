@@ -18,3 +18,28 @@ export const navbarLinks: NavbarLink[] = [
     label: "Contact",
   },
 ];
+
+import { Card } from "@/types";
+
+export const Cards: Card[] = [
+  {
+    imageUrl: "/assets/images/devflow.png",
+    projectTitle: "Devflow",
+    projectDescription: "Project with Next.JS",
+  },
+  {
+    imageUrl: "/assets/images/binteriores.png",
+    projectTitle: "Binteriores",
+    projectDescription: "Project with React.JS",
+  },
+  {
+    imageUrl: "/assets/images/portfolio1.png",
+    projectTitle: "My Portfolio",
+    projectDescription: "This is my recente project",
+  },
+  {
+    imageUrl: "/assets/images/progress.jpeg",
+    projectTitle: "Work in Progress...",
+    projectDescription: "Stay tune for new projects 🚀",
+  },
+];

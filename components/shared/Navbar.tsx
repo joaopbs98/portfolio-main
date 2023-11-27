@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { navbarLinks } from "@/constants";
 import Link from "next/link";
@@ -8,19 +7,9 @@ import Link from "next/link";
 const Navbar = () => {
   const pathname = usePathname();
 
-  const [animateClass, setAnimateClass] = useState("");
-
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setAnimateClass("animate-fade-down");
-    }, 100);
-
-    return () => clearTimeout(timeoutId);
-  }, []);
-
   return (
     <nav
-      className={`w-fit flex items-center align-center justify-center gap-4 p-2 bg-[#141414] self-center rounded-full ${animateClass}`}
+      className={`w-fit flex items-center align-center justify-center gap-4 p-2 bg-[#141414] self-center rounded-full z-10`}
     >
       {navbarLinks.map((item) => {
         const isActive =
@@ -32,8 +21,8 @@ const Navbar = () => {
             <a
               className={
                 isActive
-                  ? " bg-white font-semibold text-base px-4 py-2 relative rounded-full "
-                  : "text-[#B8B8B8] font-semibold text-sm px-4 py-2 relative rounded-md"
+                  ? " bg-white font-semibold text-base px-4 py-2 relative rounded-full hover:bg-[#d8d8d8]"
+                  : "text-[#B8B8B8] font-semibold text-sm px-4 py-2 relative rounded-md hover:text-[#d8d8d8]"
               }
             >
               {item.label}
