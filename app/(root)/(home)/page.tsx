@@ -2,6 +2,8 @@ import React from "react";
 import Hero from "@/components/Hero";
 import Expertise from "@/components/Expertise";
 import Projects from "@/components/Projects";
+import CTA from "@/components/shared/CTA";
+import InfiniteScroll from "@/components/InfiniteScroll";
 
 const Page = () => {
   return (
@@ -9,6 +11,8 @@ const Page = () => {
       <Hero />
       <Projects />
       <Expertise />
+      <InfiniteScroll />
+      <CTA />
     </main>
   );
 };

@@ -29,11 +29,11 @@ const Expertise = () => {
       >
         {ExpertiseInfos.map((item) => {
           return (
-            <div key={item.title} className="pt-8">
+            <div key={item.title} className="pt-8 lg:w-[80%]">
               <h3 className="text-white text-xl pb-2 font-semibold lg:text-2xl">
                 {item.title}
               </h3>
-              <p className="text-white font-[300] text-sm">
+              <p className="text-white font-light leading-tight  lg:text-lg">
                 {item.description}
               </p>
             </div>

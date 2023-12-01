@@ -20,8 +20,8 @@ const Hero = () => {
             I&apos;m <span className="font-bold">João.</span>
           </span>
         </h1>{" "}
-        <Button className="w-fit text-center text-sm px-2 py-4 cursor-default rounded-full hover:bg-main self-end md:text-normal xl:text-lg xl:p-6 animate-fade-left animate-once animate-delay-100">
-          SCROLL DOWN&nbsp;
+        <Button className="w-fit text-center text-sm px-4 py-4 cursor-default rounded-full hover:bg-main self-end md:text-normal xl:text-lg xl:p-6 animate-fade-left animate-once animate-delay-100">
+          Scroll Down&nbsp;
           <span className="animate-bounce text-extrabold text-[1.5rem] md:text-[2rem]">
             ↓
           </span>
@@ -36,10 +36,10 @@ const Hero = () => {
             joaopbs98@gmail.com
           </p>
         </div>
-        <div className="flex w-4/6 text-left text-white lg:w-2/6 animate-fade animate-once animate-delay-200">
-          <p className="text-[0.95rem] md:text-lg xl:text-xl leading-tight">
-            In the Frontend realm, excelling with NextJS 14, bringing creativity
-            to every digital venture.
+        <div className="flex w-4/6 text-right md:text-left text-white lg:w-2/6 animate-fade animate-once animate-delay-200">
+          <p className="text-[0.90rem] text-right md:text-left md:text-lg xl:text-xl leading-tight">
+            In the Front-End realm, excelling with NextJS 14, bringing
+            creativity to every digital venture.
           </p>
         </div>
       </div>

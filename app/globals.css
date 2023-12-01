@@ -54,6 +54,69 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
   }
+}
+
+/* @import "@fontsource-variable/exo-2";
+
+body {
+  font-family: "Exo 2 Variable", sans-serif;
+} */
+
+@import "@fontsource-variable/space-grotesk";
+
+body {
+  font-family: "Space Grotesk Variable", sans-serif;
+}
+
+.slider {
+  @apply h-fit overflow-hidden relative w-full m-auto self-center after:right-0 after:top-0 before:left-0 before:top-0 py-6;
+  background: rgb(15, 15, 15);
+}
+.slider::before,
+.slider::after {
+  @apply content-[""] h-fit absolute w-fit z-[2];
+  background: linear-gradient(
+    to right,
+    #000000 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.slider::after {
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+.slider .slide-track {
+  @apply animate-[scroll_80s_linear_infinite] flex w-[calc(100px_*_18)] md:w-[calc(300px_*_18)];
+}
+
+.slider .slide {
+  @apply h-fit w-full self-center relative py-4;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+
+.flare {
+  @apply fixed mix-blend-screen pointer-events-none -translate-x-2/4 -translate-y-2/4 z-[999999] backdrop-blur-[1px] bg-[#0000005e] cursor-none rounded-[50%] border-2 border-solid border-white;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .flare {
+    @apply w-0 h-0;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+      opacity 0.2s ease-in-out;
+  }
+}
+.flare.pointer {
+  @apply opacity-0;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
 }

@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-fit flex items-center align-center justify-center gap-4 p-2 bg-[#141414] self-center rounded-full z-10`}
+      className={`w-fit flex items-center align-center justify-center gap-4 p-2 bg-black self-center rounded-full z-10 transition fixed`}
     >
       {navbarLinks.map((item) => {
         const isActive =
@@ -21,8 +21,8 @@ const Navbar = () => {
             <a
               className={
                 isActive
-                  ? " bg-white font-semibold text-base px-4 py-2 relative rounded-full hover:bg-[#d8d8d8]"
-                  : "text-[#B8B8B8] font-semibold text-sm px-4 py-2 relative rounded-md hover:text-[#d8d8d8]"
+                  ? " bg-white transition font-semibold text-base px-4 py-2 relative rounded-full hover:bg-[#d8d8d8]"
+                  : "text-[#B8B8B8] transition font-semibold text-sm px-4 py-2 relative rounded-md hover:text-[#d8d8d8]"
               }
             >
               {item.label}

@@ -41,14 +41,16 @@ const Projects = () => {
           <h2 className="text-4xl mb-[1rem] text-white font-bold md:text-5xl">
             Projects
           </h2>
+
           <a
             href="/projects"
-            className="text-white text-sm h-fit self-end pb-4 md:text-normal"
+            className="group text-white text-sm transition h-fit self-end pb-4 md:text-normal duration-300"
           >
             More →
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </a>
         </div>
-        <p className="text-white w-[99%] font-light leading-tight md:text-lg">
+        <p className="text-white w-[99%] font-light leading-tight md:w-3/4 lg:w-2/4">
           With experience in designing and developing user-friendly web designs
           and digital solutions, I aim to assist your company in constructing
           the ideal project.
@@ -69,7 +71,7 @@ const Projects = () => {
           />
         ))}
         <Button
-          className="hidden animate-ping p-4 pb-6 w-14 h-14 ml-6 rounded-full items-center bg-black justify-center cursor-pointer border border-white hover:border-none hover:animate-none lg:flex"
+          className="hidden p-4 pb-6 w-14 h-14 ml-6 rounded-full items-center bg-141414 justify-center cursor-pointer border border-white hover:border-none hover:animate-none lg:flex"
           onClick={handleNext}
         >
           <span className="text-extrabold text-[2rem]">→</span>

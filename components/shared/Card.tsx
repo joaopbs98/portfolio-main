@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Card = ({ imageUrl, projectTitle, projectDescription }: any) => {
   return (
@@ -15,7 +16,9 @@ const Card = ({ imageUrl, projectTitle, projectDescription }: any) => {
       </div>
       <div className="flex-col pb-8 pt-2 gap-4">
         <h5 className="text-2xl font-bold text-white">{projectTitle}</h5>
-        <p className=" text-gray-500 font-light">{projectDescription}</p>
+        <p className=" text-gray-500 text-sm font-light">
+          {projectDescription}
+        </p>
       </div>
     </div>
   );
