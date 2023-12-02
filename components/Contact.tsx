@@ -7,27 +7,29 @@ import { Button } from "./ui/button";
 export default function ContactUs() {
   const [feedback, setFeedback] = useState("");
 
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
-  function sendEmail(e) {
+  function sendEmail(e: React.FormEvent) {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "joaoPedroSilva",
-        "template_av1kpzh",
-        form.current,
-        "w1xcLaDaWwQOymyPe"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          window.location.href = "/emailsend";
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "joaoPedroSilva",
+          "template_av1kpzh",
+          form.current,
+          "w1xcLaDaWwQOymyPe"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            window.location.href = "/emailsend";
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   }
 
   return (
