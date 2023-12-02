@@ -5,10 +5,10 @@ import { ExpertiseInfos } from "@/constants";
 import { useIsVisible } from "../utils/useIsVisible";
 
 const Expertise = () => {
-  const ref3 = useRef();
+  const ref3 = useRef<HTMLDivElement>(null);
   const isVisible3 = useIsVisible(ref3);
 
-  const ref4 = useRef();
+  const ref4 = useRef<HTMLDivElement>(null);
   const isVisible4 = useIsVisible(ref4);
 
   return (

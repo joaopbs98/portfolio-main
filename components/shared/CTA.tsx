@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 import { useIsVisible } from "@/utils/useIsVisible";
 
 const CTA = () => {
-  const ref5 = useRef();
+  const ref5 = useRef<HTMLDivElement>(null);
   const isVisible1 = useIsVisible(ref5);
 
   return (

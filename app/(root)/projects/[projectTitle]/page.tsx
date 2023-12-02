@@ -12,7 +12,7 @@ const page = ({ params }: any) => {
       <h2 className="text-6xl black flex w-[80%]">{Card?.pageHeader}</h2>
       <div className="relative w-full h-[500px]">
         <Image
-          src={Card?.firstImage}
+          src={Card!.firstImage}
           alt="Project Image"
           fill={true}
           className="rounded-xl object-cover"
@@ -25,7 +25,7 @@ const page = ({ params }: any) => {
       <div className="flex w-full justify-between">
         <div className="relative flex gap-8 w-[45%] h-[550px]">
           <Image
-            src={Card?.secondImage}
+            src={Card!.secondImage}
             alt="Project Image"
             fill={true}
             className="rounded-xl object-cover"
@@ -33,7 +33,7 @@ const page = ({ params }: any) => {
         </div>
         <div className="relative flex gap-8 w-[45%] h-[550px]">
           <Image
-            src={Card?.thirdImage}
+            src={Card!.thirdImage}
             alt="Project Image"
             fill={true}
             className="rounded-xl object-fill "
@@ -48,7 +48,7 @@ const page = ({ params }: any) => {
       </div>
       <div className="relative w-full h-[500px]">
         <Image
-          src={Card?.fourthImage}
+          src={Card!.fourthImage}
           alt="Project Image"
           fill={true}
           className="rounded-xl object-cover"
@@ -58,7 +58,7 @@ const page = ({ params }: any) => {
         <h3 className="text-4xl font-semibold">{Card?.bottomHeader}</h3>
         <p className="text-sm font-light">{Card?.bottomDesc}</p>
         <Button className="w-fit">
-          <a href={Card?.vercelLink}>Vercel Link</a>
+          <a href={Card!.vercelLink}>Vercel Link</a>
         </Button>
       </div>
       <CTA />

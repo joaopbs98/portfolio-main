@@ -23,10 +23,10 @@ const Projects = () => {
 
   const visibleCards = Cards.slice(startIndex, startIndex + cardsPerPage);
 
-  const ref1 = useRef();
+  const ref1 = useRef<HTMLDivElement>(null);
   const isVisible1 = useIsVisible(ref1);
 
-  const ref2 = useRef();
+  const ref2 = useRef<HTMLDivElement>(null);
   const isVisible2 = useIsVisible(ref2);
 
   return (
