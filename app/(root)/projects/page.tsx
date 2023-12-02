@@ -22,20 +22,18 @@ const ProjectsPage = () => {
       </div>
 
       <div className="gap-4 md:gap-14 transition-opacity ease-in duration-700 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 md:pb-20 ">
-        {Cards.map((item) => (
+        {Cards.map((item, index) => (
           <div key={item.projectTitle} className="w-full">
-            <Link
-              legacyBehavior
-              href={`/projects/${encodeURIComponent(item.projectTitle)}`}
-            >
-              <a>
-                <Card
-                  imageUrl={item.imageUrl}
-                  projectDescription={item.projectDescription}
-                  projectTitle={item.projectTitle}
-                />
-              </a>
-            </Link>
+            <Card
+              imageUrl={item.imageUrl}
+              projectDescription={item.projectDescription}
+              projectTitle={item.projectTitle}
+              href={
+                index === 3
+                  ? undefined
+                  : `/projects/${encodeURIComponent(item.projectTitle)}`
+              }
+            />
           </div>
         ))}
       </div>

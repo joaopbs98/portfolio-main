@@ -28,3 +28,7 @@ export interface ExpertiseInfo {
 export interface Banner {
   name: string;
 }
+
+export interface ProjectPageProps {
+  projectCard: (typeof Cards)[0];
+}

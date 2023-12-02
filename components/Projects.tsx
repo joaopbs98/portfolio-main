@@ -68,6 +68,11 @@ const Projects = () => {
             imageUrl={item.imageUrl}
             projectDescription={item.projectDescription}
             projectTitle={item.projectTitle}
+            href={
+              item.projectTitle === "Work in Progress..."
+                ? undefined
+                : `/projects/${encodeURIComponent(item.projectTitle)}`
+            }
           />
         ))}
         <Button
