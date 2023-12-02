@@ -36,7 +36,7 @@ const page = ({ params }: any) => {
             src={Card!.thirdImage}
             alt="Project Image"
             fill={true}
-            className="rounded-xl object-fill "
+            className="rounded-xl object-fill"
           />
         </div>
       </div>

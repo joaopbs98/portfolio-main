@@ -53,7 +53,7 @@ export const Cards: Card[] = [
     sectionHeader: "A breeze of fresh air for a family business.",
     sectionDesc:
       "Since day 1, it was a challenge to develop this. Ignoring the part where I'm a 'newbie' on the development field, I had to deal with the fact that I had to design everything from scratch. Thankfully, I've gathered some previous experience on UI Design with my Lisbon School of Design course, so it wasn't a hassle, just a nice challenge. On the other hand, I had to deal with the fact that I had to develop the website with ReactJS, a framework that I had never used before. It was a great learning experience, and I'm very proud of the final result, despite knowing that If it was developed today, it would be much better.",
-    thirdImage: "/binterioresFourth.png",
+    thirdImage: "/binterioresAlt.jpg",
     fourthImage: "/binterioresThird.png",
     bottomHeader: "NextJS Onwards!",
     bottomDesc:
