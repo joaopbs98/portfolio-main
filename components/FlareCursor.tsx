@@ -30,7 +30,7 @@ function FlareCursor() {
 
   return (
     <div
-      className={`flare ${isPointer ? "pointer" : ""}`}
+      className={`md:flare ${isPointer ? "pointer" : ""}`}
       style={{
         ...cursorStyle,
         left: `${position.x}px`,
