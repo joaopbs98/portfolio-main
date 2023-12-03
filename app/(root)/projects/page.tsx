@@ -9,7 +9,7 @@ const ProjectsPage = () => {
     <section className="w-full flex flex-col gap-4 py-10 md:py-20">
       <div className="mb-[3rem] flex-col md:flex-row xl:flex-row transition-opacity ease-in duration-700">
         <div className="w-full flex flex-col md:flex-row xl:flex-row md:justify-between  md:gap-20  ">
-          <h2 className="text-4xl mb-[1rem] text-white font-semibold md:text-5xl md:order-1 xl:order-1 xl:mr-60">
+          <h2 className="text-4xl mb-[1rem] text-white font-semibold md:text-5xl md:order-1 xl:order-1 xl:mr-60 pt-10">
             &#123;Projects&#125;
           </h2>
           <p className="text-white font-light md:text-lg md:order-2 xl:order-2 items-end md:ml-40 xl:ml-50 md:pb-10">
