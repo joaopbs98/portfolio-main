@@ -106,19 +106,19 @@ export const ExpertiseInfos: ExpertiseInfo[] = [
       "I create efficient, adaptable, and engaging websites. No predefined templates. I design from scratch. The combination of NextJS and Vercel forms the foundation of my web development appraoch. I employ it to provide a fast, secure, and scalable experience.",
   },
   {
-    title: "Backend Development",
+    title: "Back-End Development",
     description:
-      "I create efficient, adaptable, and engaging websites. No predefined templates. I design from scratch. The combination of NextJS and Vercel forms the foundation of my web development appraoch. I employ it to provide a fast, secure, and scalable experience.",
+      "Started my back-end development journey on my EDIT. Full-Stack Development Bootcamp. I'm currently learning Java Spring Framework, and some base concepts of Python and C#. My objective is to become a Full-Stack Developer, so I'm always looking to learn new technologies.",
   },
   {
     title: "UI/UX Design",
     description:
-      "I create efficient, adaptable, and engaging websites. No predefined templates. I design from scratch. The combination of NextJS and Vercel forms the foundation of my web development appraoch. I employ it to provide a fast, secure, and scalable experience.",
+      "I've always had an interest in UI/UX Design. I've taken a course on Lisbon School of Design for that purpose. I feel very proficient with Figma, organizing my designs to be ready for development helps me deliver my projects quicker.",
   },
   {
     title: "Project Management",
     description:
-      "I create efficient, adaptable, and engaging websites. No predefined templates. I design from scratch. The combination of NextJS and Vercel forms the foundation of my web development appraoch. I employ it to provide a fast, secure, and scalable experience.",
+      "With my past experience in Project Management, I'm very comfortable with Agile methodologies. Combining this with the knowledge of design and development, I feel like I'm able to track my projects and deliver them on time, with much more ease.",
   },
 ];
 
