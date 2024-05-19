@@ -23,23 +23,23 @@ import { Card } from "@/types";
 
 export const Cards: Card[] = [
   {
-    imageUrl: "/devflow.jpg",
-    projectTitle: "Devflow",
-    projectDescription: "Project with Next.JS",
-    pageHeader: "Devflow - An ongoing project with NextJS",
+    imageUrl: "/silksong.png",
+    projectTitle: "SILKSONG",
+    projectDescription: "A style-focused project.",
+    pageHeader: "SILKSONG - A Korean-Brand Pop-Up Store",
     challenge:
-      "Devflow is an under-development platform. It's envisioned as a space where developers can ask questions, share knowledge, and connect with other developers. The goal is to create a Stack Overflow clone with all its functionalities. The project is currently being developed using NextJS, Typescript, TailwindCSS, among other technologies. Clerk is being integrated for authentication and MongoDB is planned for the database. Features like a search engine and a voting system are also in the pipeline.",
-    firstImage: "/devflowFirst.png",
-    secondImage: "/devflowSecond.png",
-    sectionHeader: "The biggest project I have worked on so far.",
+      "SILKSONG is a hypothetical pop-up store that showcases the most sought-after Korean brands around the world. The project aims to create an immersive and stylish experience for customers, blending Korean culture with contemporary fashion trends. From skincare to streetwear, SILKSONG brings the best of Korean brands to the global stage, celebrating diversity and creativity.",
+    firstImage: "/silksongHeader.png",
+    secondImage: "/silksong2.png",
+    sectionHeader: "Bringing Korean Brands to the World",
     sectionDesc:
-      "Embarking on the journey to create a Stack Overflow clone with all its functionalities is proving to be an exciting challenge. The development process involves creating a database, a backend, and a frontend. Implementing features such as a search engine, voting system, and authentication are also part of the plan. This project marks my first encounter with NextJS, turning it into a significant learning experience. I'm currently gaining a wealth of knowledge about NextJS, Typescript, TailwindCSS, and much more.",
-    thirdImage: "/devflow.jpg",
-    fourthImage: "/devflowFourth.png",
-    bottomHeader: "Crafting a cohesive user experience with NextJS.",
+      "Embarking on the journey to create SILKSONG has been a thrilling endeavor. The project involves curating a selection of top Korean brands and designing a user interface that reflect the vibrant spirit of Korean culture. From the bustling streets of Seoul to the fashion capitals of the world, SILKSONG aims to captivate audiences with its unique blend of style and sophistication.",
+    thirdImage: "/silksong2.png",
+    fourthImage: "/silksong2.png",
+    bottomHeader: "Crafting a Unique Visual Experience",
     bottomDesc:
-      "NextJS is my go-to framework for building websites. It is a React framework that enables server-side rendering and static site generation. It is fast, secure, and scalable. In future projects, I will continue to use NextJS to provide a fast, secure, and scalable experience. These are the foundations of my web development approach.",
-    vercelLink: "https://stack-overflow-app-henna.vercel.app/",
+      "I wanted to focus more on style and styling challenges for this project, showcasing new skills that I've been growing as a Front-End Developer. Developing the style for this website was the most fun I've had in awhile and I'm eager to create more projects like this in the future.",
+    vercelLink: "https://silksong-popup-store.vercel.app/",
   },
   {
     imageUrl: "/binteriores.jpg",
@@ -80,20 +80,23 @@ export const Cards: Card[] = [
     vercelLink: "https://portfolio-joao-dev.vercel.app/",
   },
   {
-    imageUrl: "/progress.png",
-    projectTitle: "Work in Progress...",
-    projectDescription: "Stay tuned for new projects 🚀",
-    pageHeader: "Example Text",
-    challenge: "Example Text",
-    firstImage: "/progress.png",
-    secondImage: "/progress.png",
-    sectionHeader: "Example Text",
-    sectionDesc: "Example Text",
-    thirdImage: "/progress.png",
-    fourthImage: "/progress.png",
-    bottomHeader: "Example Text",
-    bottomDesc: "Example Text",
-    vercelLink: "https://devflow.vercel.app/",
+    imageUrl: "/devflow.jpg",
+    projectTitle: "Devflow",
+    projectDescription: "Project with Next.JS",
+    pageHeader: "Devflow - An ongoing project with NextJS",
+    challenge:
+      "Devflow is an under-development platform. It's envisioned as a space where developers can ask questions, share knowledge, and connect with other developers. The goal is to create a Stack Overflow clone with all its functionalities. The project is currently being developed using NextJS, Typescript, TailwindCSS, among other technologies. Clerk is being integrated for authentication and MongoDB is planned for the database. Features like a search engine and a voting system are also in the pipeline.",
+    firstImage: "/devflowFirst.png",
+    secondImage: "/devflowSecond.png",
+    sectionHeader: "The biggest project I have worked on so far.",
+    sectionDesc:
+      "Embarking on the journey to create a Stack Overflow clone with all its functionalities is proving to be an exciting challenge. The development process involves creating a database, a backend, and a frontend. Implementing features such as a search engine, voting system, and authentication are also part of the plan. This project marks my first encounter with NextJS, turning it into a significant learning experience. I'm currently gaining a wealth of knowledge about NextJS, Typescript, TailwindCSS, and much more.",
+    thirdImage: "/devflow.jpg",
+    fourthImage: "/devflowFourth.png",
+    bottomHeader: "Crafting a cohesive user experience with NextJS.",
+    bottomDesc:
+      "NextJS is my go-to framework for building websites. It is a React framework that enables server-side rendering and static site generation. It is fast, secure, and scalable. In future projects, I will continue to use NextJS to provide a fast, secure, and scalable experience. These are the foundations of my web development approach.",
+    vercelLink: "https://stack-overflow-app-henna.vercel.app/",
   },
 ];
 
