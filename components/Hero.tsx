@@ -38,7 +38,7 @@ const Hero = () => {
         </div>
         <div className="flex w-4/6 text-right md:text-left text-white lg:w-2/6 animate-fade animate-once animate-delay-200">
           <p className="text-[0.90rem] text-right md:text-left md:text-lg xl:text-xl leading-tight">
-            In the Front-End realm, excelling with NextJS 14, bringing
+            In the Front-End realm, excelling with NextJS, bringing
             creativity to every digital venture.
           </p>
         </div>
